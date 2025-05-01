@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 320px;
+  }
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .form-group {
+    margin-bottom: 16px;
+  }
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .login-btn {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  .message {
+    margin-top: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .error {
+    color: #d93025;
+  }
+  .success {
+    color: #188038;
+  }
+</style>
+</head>
+<body>
+<div class="login-container">
+  <h2>Login</h2>
+  <form id="loginForm" novalidate>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" autocomplete="username" required />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required />
+    </div>
+    <button type="submit" class="login-btn"><a href="http://127.0.0.1:3000/c:/Users/infor/student page.html">Login</button></a>
+    <div id="message" class="message"></div>
+  </form>
+</div>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const messageEl = document.getElementById('message');
+    messageEl.textContent = '';
+    messageEl.className = 'message';
+
+    const username = event.target.username.value.trim();
+    const password = event.target.password.value.trim();
+
+    if (!username || !password) {
+      messageEl.textContent = 'Please enter both username and password.';
+      messageEl.classList.add('error');
+      return;
+    }
+
+  
+    const validUsername = 'srijit dam';
+    const validPassword = 'pass123';
+
+    if (username === validUsername && password === validPassword) {
+      messageEl.textContent = 'Login successful!';
+      messageEl.classList.add('success');
+    } else {
+      messageEl.textContent = 'Invalid username or password.';
+      messageEl.classList.add('error');
+    }
+  });
+</script>
+</body>
+</html>

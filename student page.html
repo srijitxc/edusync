@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduSync - Student Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="stud.css" rel="stylesheet">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-graduation-cap me-2"></i>EduSync
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i> Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///C:/Users/infor/notifi.html"><i class="fas fa-bell me-1"></i> Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-cog me-1"></i> Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-1"></i> Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container py-4">
+    
+    <div class="row">
+      <div class="col-lg-12 mb-4">
+        <div class="card shadow-sm profile-card">
+          <div class="card-body d-flex flex-column flex-md-row">
+            <div class="profile-image">
+              <img src="/api/placeholder/150/150" alt="Student Profile" class="rounded-circle">
+            </div>
+            <div class="profile-info ms-md-4 mt-3 mt-md-0">
+              <h2 class="mb-1">Srijit Dam</h2>
+              <p class="text-muted mb-1">Student ID: BWU/BCA/24/179</p>
+              <div class="d-flex flex-wrap">
+                <span class="badge bg-primary me-2 mb-2">Computational Science</span>
+                <span class="badge bg-secondary me-2 mb-2">Year 1</span>
+                <span class="badge bg-success me-2 mb-2">Section C</span>
+              </div>
+              <div class="student-details mt-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p><i class="fas fa-envelope text-primary me-2"></i> srijitdam006@gmail.com</p>
+                    <p><i class="fas fa-phone text-primary me-2"></i>675678833</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p><i class="fas fa-user-friends text-primary me-2"></i> Advisor:XYZ </p>
+                    <p><i class="fas fa-calendar-check text-primary me-2"></i> Enrollment: Fall 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ms-auto mt-3 mt-md-0 text-md-end">
+              <button class="btn btn-sm btn-outline-primary">
+                <i class="fas fa-edit me-1"></i> Edit Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mb-4">
+      <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+        <div class="card shadow-sm stat-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="icon-container bg-primary-light">
+                <i class="fas fa-clock text-primary"></i>
+              </div>
+              <div class="ms-3">
+                <h6 class="mb-0">Attendance</h6>
+                <h4 class="mb-0">92%</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+        <div class="card shadow-sm stat-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="icon-container bg-success-light">
+                <i class="fas fa-book text-success"></i>
+              </div>
+              <div class="ms-3">
+                <h6 class="mb-0">Courses</h6>
+                <h4 class="mb-0">7</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+        <div class="card shadow-sm stat-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="icon-container bg-warning-light">
+                <i class="fas fa-tasks text-warning"></i>
+              </div>
+              <div class="ms-3">
+                <h6 class="mb-0">Assignments</h6>
+                <h4 class="mb-0">3 <small class="text-danger">Due</small></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm stat-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="icon-container bg-info-light">
+                <i class="fas fa-chart-line text-info"></i>
+              </div>
+              <div class="ms-3">
+                <h6 class="mb-0">SGPA</h6>
+                <h4 class="mb-0">7.90</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-lg-8">
+        
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-white">
+            <ul class="nav nav-tabs card-header-tabs" id="studentTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="routine-tab" data-bs-toggle="tab" data-bs-target="#routine">
+                  <i class="fas fa-calendar-alt me-1"></i> Class Routine
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="syllabus-tab" data-bs-toggle="tab" data-bs-target="#syllabus">
+                  <i class="fas fa-list-alt me-1"></i> Syllabus
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes">
+                  <i class="fas fa-sticky-note me-1"></i> Class Notes
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="attendance-tab" data-bs-toggle="tab" data-bs-target="#attendance">
+                  <i class="fas fa-user-check me-1"></i> Attendance
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content" id="studentTabContent">
+           
+              <div class="tab-pane fade show active" id="routine">
+                <h5 class="card-title">Weekly Class Schedule</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="time-col">08:00 - 09:30</td>
+                        <td class="class-cell subject-cs">
+                          <div class="subject">Data Structures</div>
+                          <div class="location">Room 201</div>
+                        </td>
+                        <td></td>
+                        <td class="class-cell subject-cs">
+                          <div class="subject">Data Structures</div>
+                          <div class="location">Room 201</div>
+                        </td>
+                        <td></td>
+                        <td class="class-cell subject-cs">
+                          <div class="subject">Data Structures</div>
+                          <div class="location">Lab 3</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="time-col">09:45 - 11:15</td>
+                        <td></td>
+                        <td class="class-cell subject-math">
+                          <div class="subject">Linear Algebra</div>
+                          <div class="location">Room 105</div>
+                        </td>
+                        <td></td>
+                        <td class="class-cell subject-math">
+                          <div class="subject">Linear Algebra</div>
+                          <div class="location">Room 105</div>
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="time-col">11:30 - 13:00</td>
+                        <td class="class-cell subject-english">
+                          <div class="subject">Technical Writing</div>
+                          <div class="location">Room 302</div>
+                        </td>
+                        <td></td>
+                        <td class="class-cell subject-english">
+                          <div class="subject">Technical Writing</div>
+                          <div class="location">Room 302</div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="time-col">14:00 - 15:30</td>
+                        <td></td>
+                        <td class="class-cell subject-physics">
+                          <div class="subject">Digital Electronics</div>
+                          <div class="location">Lab 2</div>
+                        </td>
+                        <td></td>
+                        <td class="class-cell subject-physics">
+                          <div class="subject">Digital Electronics</div>
+                          <div class="location">Room 203</div>
+                        </td>
+                        <td class="class-cell subject-physics">
+                          <div class="subject">Digital Electronics</div>
+                          <div class="location">Room 203</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="time-col">15:45 - 17:15</td>
+                        <td class="class-cell subject-project">
+                          <div class="subject">Project Lab</div>
+                          <div class="location">Lab 5</div>
+                        </td>
+                        <td></td>
+                        <td class="class-cell subject-project">
+                          <div class="subject">Project Lab</div>
+                          <div class="location">Lab 5</div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+             
+              <div class="tab-pane fade" id="syllabus">
+                <h5 class="card-title">Course Syllabi</h5>
+                <div class="accordion" id="syllabusAccordion">
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        <span class="subject-badge bg-cs">CS</span> Data Structures (CS-201)
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#syllabusAccordion">
+                      <div class="accordion-body">
+                        <div class="mb-3">
+                          <strong>Course Description:</strong> This course introduces the fundamental concepts of data structures and the algorithms that operate on them.
+                        </div>
+                        <div class="mb-3">
+                          <strong>Instructor:</strong> Dr. Robert Chen
+                        </div>
+                        <div class="mb-3">
+                          <strong>Textbooks:</strong>
+                          <ul>
+                            <li>"Data Structures and Algorithm Analysis in C++" by Mark Allen Weiss</li>
+                            <li>"Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein</li>
+                          </ul>
+                        </div>
+                        <div class="mb-3">
+                          <strong>Topics:</strong>
+                          <ol>
+                            <li>Arrays and Linked Lists</li>
+                            <li>Stacks, Queues, and Deques</li>
+                            <li>Trees and Binary Search Trees</li>
+                            <li>Balanced Trees (AVL, Red-Black)</li>
+                            <li>Heaps and Priority Queues</li>
+                            <li>Hash Tables</li>
+                            <li>Graphs and Graph Algorithms</li>
+                          </ol>
+                        </div>
+                        <div class="syllabus-actions">
+                          <a href="#" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-download me-1"></i> Download Full Syllabus
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        <span class="subject-badge bg-math">MTH</span> Linear Algebra (MTH-301)
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#syllabusAccordion">
+                      <div class="accordion-body">
+                        <div class="mb-3">
+                          <strong>Course Description:</strong> This course covers vector spaces, linear transformations, determinants, eigenvalues and eigenvectors, and applications.
+                        </div>
+                        <div class="mb-3">
+                          <strong>Instructor:</strong> Dr. Lisa Wong
+                        </div>
+                        <div class="mb-3">
+                          <strong>Topics:</strong>
+                          <ol>
+                            <li>Systems of Linear Equations</li>
+                            <li>Matrix Algebra</li>
+                            <li>Determinants</li>
+                            <li>Vector Spaces</li>
+                            <li>Eigenvalues and Eigenvectors</li>
+                            <li>Orthogonality</li>
+                            <li>Applications</li>
+                          </ol>
+                        </div>
+                        <div class="syllabus-actions">
+                          <a href="#" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-download me-1"></i> Download Full Syllabus
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        <span class="subject-badge bg-english">ENG</span> Technical Writing (ENG-202)
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#syllabusAccordion">
+                      <div class="accordion-body">
+                        <div class="mb-3">
+                          <strong>Course Description:</strong> Development of skills in technical writing with emphasis on clarity, conciseness, and accuracy.
+                        </div>
+                        <div class="syllabus-actions">
+                          <a href="#" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-download me-1"></i> Download Full Syllabus
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        <span class="subject-badge bg-physics">EE</span> Digital Electronics (EE-205)
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#syllabusAccordion">
+                      <div class="accordion-body">
+                        <div class="mb-3">
+                          <strong>Course Description:</strong> Introduction to digital systems design, Boolean algebra, logic gates, and digital circuits.
+                        </div>
+                        <div class="syllabus-actions">
+                          <a href="#" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-download me-1"></i> Download Full Syllabus
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="notes">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h5 class="card-title mb-0">Class Notes</h5>
+                  <div class="notes-filter">
+                    <select class="form-select form-select-sm">
+                      <option value="all">All Courses</option>
+                      <option value="cs-201">Data Structures</option>
+                      <option value="mth-301">Linear Algebra</option>
+                      <option value="eng-202">Technical Writing</option>
+                      <option value="ee-205">Digital Electronics</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="list-group notes-list">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="mb-1">Binary Search Trees Implementation</h6>
+                      <small class="text-muted">Apr 25</small>
+                    </div>
+                    <p class="mb-1 notes-preview">Notes on implementing binary search trees, including insertion, deletion, and traversal algorithms.</p>
+                    <small><span class="subject-badge bg-cs">Data Structures</span> <i class="fas fa-paperclip ms-2 me-1"></i> 2 attachments</small>
+                  </a>
+                  
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="mb-1">Vector Spaces and Linear Transformations</h6>
+                      <small class="text-muted">Apr 20</small>
+                    </div>
+                    <p class="mb-1 notes-preview">Comprehensive notes on vector spaces, subspaces, and linear transformations.</p>
+                    <small><span class="subject-badge bg-math">Linear Algebra</span> <i class="fas fa-file-pdf ms-2 me-1"></i> PDF</small>
+                  </a>
+                  
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="mb-1">Technical Report Structure</h6>
+                      <small class="text-muted">Apr 18</small>
+                    </div>
+                    <p class="mb-1 notes-preview">Guidelines for writing effective technical reports with proper structure and formatting.</p>
+                    <small><span class="subject-badge bg-english">Technical Writing</span></small>
+                  </a>
+                  
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="mb-1">Logic Gates and Circuit Design</h6>
+                      <small class="text-muted">Apr 15</small>
+                    </div>
+                    <p class="mb-1 notes-preview">Notes on various logic gates, truth tables, and basic circuit design principles.</p>
+                    <small><span class="subject-badge bg-physics">Digital Electronics</span> <i class="fas fa-paperclip ms-2 me-1"></i> 3 attachments</small>
+                  </a>
+                  
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="mb-1">Hash Tables and Collision Resolution</h6>
+                      <small class="text-muted">Apr 10</small>
+                    </div>
+                    <p class="mb-1 notes-preview">Detailed explanation of hash functions, collision resolution strategies, and hash table implementation.</p>
+                    <small><span class="subject-badge bg-cs">Data Structures</span></small>
+                  </a>
+                </div>
+                
+                <div class="text-center mt-3">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="fas fa-sync me-1"></i> Load More Notes
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="attendance">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h5 class="card-title mb-0">Attendance Record</h5>
+                  <div class="d-flex attendance-filter">
+                    <select class="form-select form-select-sm me-2">
+                      <option value="all">All Courses</option>
+                      <option value="cs-201">Data Structures</option>
+                      <option value="mth-301">Linear Algebra</option>
+                      <option value="eng-202">Technical Writing</option>
+                      <option value="ee-205">Digital Electronics</option>
+                    </select>
+                    <select class="form-select form-select-sm">
+                      <option value="this-month">This Month</option>
+                      <option value="last-month">Last Month</option>
+                      <option value="this-semester">This Semester</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="attendance-overview mb-4">
+                  <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-3 mb-md-0">
+                      <div class="attendance-stat">
+                        <h2 class="mb-0">46</h2>
+                        <p class="text-muted mb-0">Total Classes</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3 mb-md-0">
+                      <div class="attendance-stat present">
+                        <h2 class="mb-0">42</h2>
+                        <p class="text-muted mb-0">Present</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                      <div class="attendance-stat absent">
+                        <h2 class="mb-0">4</h2>
+                        <p class="text-muted mb-0">Absent</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                      <div class="attendance-stat percentage">
+                        <h2 class="mb-0">91%</h2>
+                        <p class="text-muted mb-0">Attendance Rate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="table-responsive">
+                  <table class="table table-hover attendance-table">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Date</th>
+                        <th>Course</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>April 30, 2023</td>
+                        <td><span class="subject-badge bg-cs">Data Structures</span></td>
+                        <td>08:00 - 09:30</td>
+                        <td><span class="badge bg-success">Present</span></td>
+                      </tr>
+                      <tr>
+                        <td>April 30, 2023</td>
+                        <td><span class="subject-badge bg-english">Technical Writing</span></td>
+                        <td>11:30 - 13:00</td>
+                        <td><span class="badge bg-success">Present</span></td>
+                      </tr>
+                      <tr>
+                        <td>April 29, 2023</td>
+                        <td><span class="subject-badge bg-math">Linear Algebra</span></td>
+                        <td>09:45 - 11:15</td>
+                        <td><span class="badge bg-success">Present</span></td>
+                      </tr>
+                      <tr>
+                        <td>April 29, 2023</td>
+                        <td><span class="subject-badge bg-physics">Digital Electronics</span></td>
+                        <td>14:00 - 15:30</td>
+                        <td><span class="badge bg-danger">Absent</span></td>
+                      </tr>
+                      <tr>
+                        <td>April 28, 2023</td>
+                        <td><span class="subject-badge bg-cs">Data Structures</span></td>
+                        <td>08:00 - 09:30</td>
+                        <td><span class="badge bg-success">Present</span></td>
+                      </tr>
+                      <tr>
+                        <td>April 28, 2023</td>
+                        <td><span class="subject-badge bg-english">Technical Writing</span></td>
+                        <td>11:30 - 13:00</td>
+                        <td><span class="badge bg-success">Present</span></td>
+                      </tr>
+                      <tr>
+                        <td>April 28, 2023</td>
+                        <td><span class="subject-badge bg-project">Project Lab</span></td>
+                        <td>15:45 - 17:15</td>
+                        <td><span class="badge bg-success">Present</span></td>
+                      </tr>
+                      <tr>
+                        <td>April 27, 2023</td>
+                        <td><span class="subject-badge bg-math">Linear Algebra</span></td>
+                        <td>09:45 - 11:15</td>
+                        <td><span class="badge bg-success">Present</span></td>
+                      </tr>
+                      <tr>
+                        <td>April 27, 2023</td>
+                        <td><span class="subject-badge bg-physics">Digital Electronics</span></td>
+                        <td>14:00 - 15:30</td>
+                        <td><span class="badge bg-success">Present</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div class="text-center mt-3">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="fas fa-sync me-1"></i> Load More Records
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-white d-flex justify-content-between align-items-center">
+            <h5 class="card-title mb-0">Upcoming Deadlines</h5>
+            <a href="#" class="text-primary small">View All</a>
+          </div>
+          <div class="card-body p-0">
+            <ul class="list-group list-group-flush deadline-list">
+              <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-1">Binary Trees Assignment</h6>
+                    <small><span class="subject-badge bg-cs">Data Structures</span></small>
+                  </div>
+                  <div class="text-end">
+                    <span class="badge bg-danger">Tomorrow</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div></div>
+  </div>
+  <script src="studc.js"></script>
+</body>
+</html>
